@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<title>Bootstrap Tutorial</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.3.3.7.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<script src="js/jquery.min.3.3.7.js"></script>
+		<script src="js/bootstrap.min.3.3.7.js"></script>
+		<script src="js/style.js"></script>
+	</head>
+	<body background="D:\WEB ONMYOJI MOBA\web\images\anhnen1.png" style="width:100% !important">
+		<video autoplay muted loop id="myVideo">
+		  <source src="D:\WEB ONMYOJI MOBA\web\video\video.mp4" type="video/mp4"> <!--link video-->
+		</video>
+
+		<div class="content">	  
+		  <button id="myBtn" onclick="myFunction()">Pause</button>
+		</div>
+		
+		<script> 
+			var video = document.getElementById("myVideo");
+			var btn = document.getElementById("myBtn");
+
+			function myFunction() {
+			  if (video.paused) {
+				video.play();
+				btn.innerHTML = "Pause";
+			  } else {
+				video.pause();
+				btn.innerHTML = "Play";
+			  }
+			}
+		</script>
+		<div class="header">
+		</div>
+
+		<ul>
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</body>
+	<!--<script type="text/javascript" src="https://sites.google.com/site/iristipsblog/file/hoamai-hoadao.js"></script> code bông nền-->
+</html>
