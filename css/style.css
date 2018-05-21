@@ -56,38 +56,40 @@ html, body, .container {
   margin: 0px;
   overflow: hidden;
 }
-
-.container {
-  /*padding:150px;*/
-  background: #2F2F31;
+.nav_top{
+	background-color: rgba(128, 128, 128,0.7);
+	border: none;
+	z-index: 1;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+.nav_top a{
+	color: #f1f1f1;
+	font-size: 23px;
 }
-
-li {
-    float: left;
+.nav_top ul li a:hover{
+	background-color: rgba(247, 175, 223 , 0.7);
 }
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.navbar-header button{
+	background-color: #7d7a7ae0;
+    border: 1px solid #f1f1f1;
+}
+.navbar-header button span{
+	background-color: #f1f1f1;
 }
 
-li a:hover {
-    background-color: #0000 ;
-}
+.bg_img{
+    background-image: url("../images/anhthaythe.jpg");
 
-.active {
-    background-color: #0000;
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+	position: absolute;
+	top: 0;
+    left: 0;
+    width: 100%;
+	z-index:0;
 }
