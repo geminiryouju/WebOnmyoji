@@ -17,4 +17,7 @@
 		<div class="visible-xs bg_img"></div>
 		
 	</body>
+	<script>
+		window.onload = setWidthMenu();
+	</script>
 </html>

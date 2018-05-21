@@ -6,14 +6,14 @@ body {
 	background-repeat:no-repeat;
 	background-size:100%;
 	margin: 0;
-	font-family: Arial;
+	font-family: Open Sans;
 	font-size: 30px;
 }
 
 #myVideo {
 	position: fixed;
 	right: 0;
-	bottom: 0;
+	top: -25px;
 	min-width: 100%; 
 	min-height: 100%;
 }
@@ -57,12 +57,13 @@ html, body, .container {
   overflow: auto;
 }
 .nav_top{
-	background-color: rgba(128, 128, 128,0.7);
-	border: none;
-	z-index: 99;
+	background: url(../../images/navbar_bg.png) no-repeat 50% -13px;
+    border: none;
+    height: 70px;
+    z-index: 99;
 }
 .nav_top a{
-	color: #f1f1f1;
+	color: #200030;
 	font-size: 23px;
 }
 .nav_top ul li a:hover{

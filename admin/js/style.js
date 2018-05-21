@@ -141,4 +141,13 @@ window.addEventListener('mousedown', function(e){
     });
   }
 });
+//=========================== index.php ===========================
+function setWidthMenu(){
+	var sr_width = $(window).width();
+	var menu_width = $('ul.nav').width();
+	$('ul.nav').css('margin-left', (sr_width - menu_width)/2-30);
+}
 
+$(window).on('resize', function(){
+	setWidthMenu();
+});
