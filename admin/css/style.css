@@ -77,7 +77,7 @@ html, body, .container {
 }
 
 .bg_img{
-    background-image: url("../images/anhthaythe.jpg");
+    background-image: url("../../images/anhthaythe.jpg");
 
     /* Full height */
     height: 100%; 
