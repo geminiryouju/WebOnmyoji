@@ -2,8 +2,7 @@
 	
 ?>
 
-<!-- Navbar -->
-<nav class="navbar nav_top">
+<nav class="navbar nav_top navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
 		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -14,7 +13,7 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-			  <li class="active"><a href="index.html">Trang chủ</a></li>
+			  <li class="active"><a href="index.php">Trang chủ</a></li>
 			  <li><a href="#">Shikigami</a></li>
 			  <li><a href="#">Trang bị</a></li>
 			  <li><a href="#">Phép</a></li>
@@ -24,4 +23,4 @@
 			</ul>
 		</div>
 	</div>
-</nav> <!-- End navbar -->
+</nav>
