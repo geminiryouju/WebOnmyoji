@@ -6,7 +6,7 @@ body {
 	background-repeat:no-repeat;
 	background-size:100%;
 	margin: 0;
-	font-family: Open Sans;
+	font-family:"Open Sans", serif;
 	font-size: 30px;
 }
 
@@ -66,9 +66,45 @@ html, body, .container {
 	color: #200030;
 	font-size: 23px;
 }
-.nav_top ul li a:hover{
-	background-color: rgba(247, 175, 223 , 0.7);
+.nav_top ul{
+    margin-top: 8px;
 }
+.nav_top ul li a, .nav_top ul li a:after{
+	transition: all .5s;
+}
+.nav_top ul li a{
+	position: relative;
+	z-index: 1;
+}
+.nav_top ul li a:hover{
+	background: transparent;
+}
+.nav_top ul li a:after{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 1px;
+	content: '.';
+	color: transparent;
+	background: rgb(247,247,247); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(247,247,247,1) 1%, rgba(144,198,237,1) 45%, rgba(110,184,234,1) 56%, rgba(244,244,244,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(247,247,247,1) 1%,rgba(144,198,237,1) 45%,rgba(110,184,234,1) 56%,rgba(244,244,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(247,247,247,1) 1%,rgba(144,198,237,1) 45%,rgba(110,184,234,1) 56%,rgba(244,244,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	opacity: 0;
+	z-index: -1;
+    border-radius: 5px;
+}
+.nav_top ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
 .navbar-header button{
 	background-color: #7d7a7ae0;
     border: 1px solid #f1f1f1;
@@ -79,10 +115,8 @@ html, body, .container {
 
 .bg_img{
     background-image: url("../../images/anhthaythe.jpg");
-
     /* Full height */
     height: 100%; 
-
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;

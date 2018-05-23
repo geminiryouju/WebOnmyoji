@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 	<title>Onmyoji Viet Nam</title>
 	<link rel="shortcut icon" type='image/x-icon' href='../images/favicon.ico' />
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../admin/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../admin/css/style.css">
 	
