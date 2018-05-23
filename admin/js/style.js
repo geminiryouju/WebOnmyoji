@@ -141,6 +141,11 @@ window.addEventListener('mousedown', function(e){
     });
   }
 });
+//============================= Menu ==============================
+$('li.dropdown').mouseenter(function() {
+  alert('asdas');
+});
+
 //=========================== index.php ===========================
 function setWidthMenu(){
 	var sr_width = $(window).width();

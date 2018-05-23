@@ -56,6 +56,8 @@ html, body, .container {
   margin: 0px;
   overflow: auto;
 }
+
+/* Navbar Menu CSS */
 .nav_top{
 	background: url(../../images/navbar_bg.png) no-repeat 50% -13px;
     border: none;
@@ -70,13 +72,13 @@ html, body, .container {
     margin-top: 8px;
 }
 .nav_top ul li a, .nav_top ul li a:after{
-	transition: all .5s;
+	transition: all .2s;
 }
 .nav_top ul li a{
 	position: relative;
 	z-index: 1;
 }
-.nav_top ul li a:hover{
+.nav_top ul li a:focus, .nav_top ul li a:hover{
 	background: transparent;
 }
 .nav_top ul li a:after{
@@ -92,9 +94,10 @@ html, body, .container {
 	content: '.';
 	color: transparent;
 	background: rgb(247,247,247); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(247,247,247,1) 1%, rgba(144,198,237,1) 45%, rgba(110,184,234,1) 56%, rgba(244,244,244,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(247,247,247,1) 1%,rgba(144,198,237,1) 45%,rgba(110,184,234,1) 56%,rgba(244,244,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(247,247,247,1) 1%,rgba(144,198,237,1) 45%,rgba(110,184,234,1) 56%,rgba(244,244,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(177,101,188,1) 46%, rgba(177,101,188,1) 55%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(177,101,188,1) 46%,rgba(177,101,188,1) 55%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(177,101,188,1) 46%,rgba(177,101,188,1) 55%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	opacity: 0;
 	z-index: -1;
     border-radius: 5px;
@@ -113,6 +116,86 @@ html, body, .container {
 	background-color: #f1f1f1;
 }
 
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(177,101,188,1) 46%, rgba(177,101,188,1) 55%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(177,101,188,1) 46%,rgba(177,101,188,1) 55%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(177,101,188,1) 46%,rgba(177,101,188,1) 55%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius: 5px;
+}
+/* Dropdown large inside main navbar */
+/* ======== effect dropdown menu ========= */
+.dropdown .dropdown-menu{
+	display: none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: -12px;
+}
+/* ======================================= */
+.dropdown-large {
+  position: static !important;
+}
+.dropdown-menu-large {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 20px 0px;
+}
+.dropdown-menu-large > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu-large > li > ul > li {
+  list-style: none;
+}
+.dropdown-menu-large > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: normal;
+}
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+.dropdown-menu-large .disabled > a,
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  color: #999999;
+}
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+.dropdown-menu-large .dropdown-header {
+  color: #428bca;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .dropdown-menu-large {
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  .dropdown-menu-large > li {
+    margin-bottom: 30px;
+  }
+  .dropdown-menu-large > li:last-child {
+    margin-bottom: 0;
+  }
+  .dropdown-menu-large .dropdown-header {
+    padding: 3px 15px !important;
+  }
+}
+
+/* BG HOME CSS */
 .bg_img{
     background-image: url("../../images/anhthaythe.jpg");
     /* Full height */
